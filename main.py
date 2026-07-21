@@ -10,8 +10,8 @@ from ultralytics import YOLO
 
 # Filter to these classes only. Set to None to detect everything.
 # See kb/yolo-coco-classes.md for all 80 available classes.
-CLASSES = ["laptop", "keyboard", "mouse", "cell phone", "cup", "bottle",
-           "book", "scissors", "remote", "clock", "vase"]
+CLASSES = ["person", "laptop", "keyboard", "mouse", "cell phone", "cup",
+           "bottle", "book", "scissors", "remote", "clock", "vase"]
 
 # How often to log detections (seconds). Detections still run every frame for display.
 LOG_INTERVAL = 5.0
