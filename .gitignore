@@ -14,3 +14,4 @@ __pycache__/
 # Captured output
 captures/
 runs/
+data/
