@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Model weights (large files, downloaded automatically — don't commit)
+*.pt
+*.onnx
+
+# OS
+.DS_Store
+
+# Captured output
+captures/
+runs/

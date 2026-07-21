@@ -1,0 +1,12 @@
+[project]
+name = "cv-starter"
+version = "0.1.0"
+description = "Computer vision starter project"
+requires-python = ">=3.13"
+dependencies = [
+    "ultralytics>=8.3.0",
+    "opencv-python>=4.10",
+    "torch>=2.3",
+    "torchvision>=0.18",
+    "numpy>=1.26",
+]
