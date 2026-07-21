@@ -106,6 +106,7 @@ def main():
     print("Motion-triggered detector running. Press 'q' to quit.")
 
     process = psutil.Process()
+    total_cores = psutil.cpu_count()
 
     prev_time = time.time()
     last_log_time = 0.0
@@ -203,7 +204,8 @@ def main():
         yolo_pct = (yolo_calls / total_frames * 100) if total_frames > 0 else 0
 
         # Resource usage
-        cpu_pct = process.cpu_percent()
+        cpu_pct_raw = process.cpu_percent()
+        cpu_pct = cpu_pct_raw / total_cores  # % of total CPU capacity
         mem_mb = process.memory_info().rss / 1024 / 1024
 
         # Log metrics every interval
